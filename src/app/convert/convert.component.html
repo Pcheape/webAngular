@@ -1,5 +1,11 @@
 <p>
-  <button (click)="onClickMe()">Convert</button>
-
+ <input #Km Km.value = ''/>
+<button (click)="convertKm(Km.value)">Convert</button>
 </p>
-<p>{{clickMessage}}</p>
+<p>{{conversionKM}} :Miles</p>
+
+<p>
+ <input #m m.value = ''/>
+<button (click)="convertM(m.value)">Convert</button>
+</p>
+<p>{{conversionM}} :Km</p>

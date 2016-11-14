@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./convert.component.css']
 })
 export class ConvertComponent implements OnInit {
-clickMessage string ="";
+conversionKM: double = 0;
+conversionM: double = 0;
   constructor() { }
-onClickeMe(){
-  this.clickMessage = "output";
+
+convertKm(Km: double){
+  this.conversionKM = Km*0.62137;
+}
+convertM(m: double){
+  this.conversionM = m*1.60934;
 }
   ngOnInit() {
   }
